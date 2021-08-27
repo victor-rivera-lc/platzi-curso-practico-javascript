@@ -12,7 +12,7 @@
     </h1>
     <p>Este es el primer taller del curso práctico de JavaScript</p>
     </header>
-    <section>
+    <section id="sectionCuadrado">
         <h2>Calcula el área y perímetro de un cuadrado</h2>
         <form>
             <label for="InputCuadrado">
@@ -27,7 +27,47 @@
             </button>
         </form>
     </section>
-    
+    <section id="sectionTriangulo">
+        <h2>Calcula el área, perímetro y altura de un tríangulo</h2>
+        <form>
+            <label for="Lado1Triangulo">
+                Escribe el tamaño del 1er lado del tríangulo: 
+            </label>
+            <input id="Lado1Triangulo" type="number" /><br>
+            <label for="Lado2Triangulo">
+                Escribe el tamaño del 2do lado del tríangulo: 
+            </label>
+            <input id="Lado2Triangulo" type="number" /><br>
+            <label for="BaseTriangulo">
+                Escribe el tamaño de la base del tríangulo: 
+            </label>
+            <input id="BaseTriangulo" type="number" /><br>
+            <button type="button" onclick="calcularPerimetroTriangulo()">
+                Calcular perímetro
+            </button>
+            <button type="button" onclick="calcularAreaTriangulo()">
+                Calcular área
+            </button>
+            <button type="button" onclick="calcularAlturaTriangulo()">
+                Calcular altura
+            </button>
+        </form>
+    </section>
+    <section id="sectionCirculo">
+        <h2>Calcula el área y perímetro de un círculo</h2>
+        <form>
+            <label for="InputCirculo">
+                Escribe el tamaño del radio del circulo: 
+            </label>
+            <input id="InputCirculo" type="number" />
+            <button type="button" onclick="calcularPerimetroCirculo()">
+                Calcular perímetro
+            </button>
+            <button type="button" onclick="calcularAreaCirculo()">
+                Calcular área
+            </button>
+        </form>
+    </section>
     <script src="./figuras.js"> </script>
 </body>
 </html>
